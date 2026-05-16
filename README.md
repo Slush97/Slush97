@@ -9,7 +9,10 @@ Business Analytics @ CSUSM. Rust, Python, SQL.
 - **[esolearn](https://github.com/Slush97/esolearn)** — ML toolkit in pure Rust
 
 ## Languages
-![Languages](./metrics.languages.svg)
+<p>
+  <img src="./profile-summary-card-output/tokyonight/1-repos-per-language.svg" width="49%" alt="Languages by repo count" />
+  <img src="./profile-summary-card-output/tokyonight/2-most-commit-language.svg" width="49%" alt="Languages by commits" />
+</p>
 
 ## Contact
 humeseliott@gmail.com · [eliott.info](https://eliott.info) · [linkedin](https://linkedin.com/in/e-humes/)
