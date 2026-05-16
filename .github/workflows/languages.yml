@@ -6,22 +6,16 @@ on:
   workflow_dispatch:
 
 jobs:
-  metrics:
+  build:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@latest
+      - uses: actions/checkout@v4
+      - uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          user: Slush97
-          filename: metrics.languages.svg
-          base: ""
-          template: classic
-          config_timezone: America/Los_Angeles
-          plugin_languages: yes
-          plugin_languages_ignored: html, css, tex, dockerfile, makefile, jupyter notebook, scss, shell
-          plugin_languages_details: percentage, bytes-size
-          plugin_languages_limit: 8
-          plugin_languages_sections: most-used
-          plugin_languages_colors: github
+          USERNAME: Slush97
+          UTC_OFFSET: -8
+          EXCLUDE: HTML,CSS,TeX,Dockerfile,Makefile,Jupyter Notebook,SCSS,Shell,Batchfile
